@@ -1,0 +1,5 @@
+<h1></h1>
+<% @houses.each do |house| %>
+<p>View the House Details: <%= link_to house.name, house_path(house.id) %></p>
+<p>Edit the House Name: <%= link_to "Edit", edit_house_url(house.id) %></p>
+<% end %>
